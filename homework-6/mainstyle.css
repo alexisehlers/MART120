@@ -1,0 +1,9 @@
+.whiteColor{
+    color:white;
+    background-color:lightgreen; font-size: 30px;
+}
+
+#specificStyle{
+  font-family: Aria, Helvetica, sans-serif;
+  color: orange;
+}
