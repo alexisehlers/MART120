@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A short description...">
+  <meta name="author" content="Your Name">
+  <meta name="keywords" content="Some, keywords, here...">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Game</title>
+  <style>
+      body{
+        font-family: Arial, sans-serif, Helvetica;
+        font-size: medium;
+        backgroundColor: lightblue;
+      }
+    </style>
+    <script>
+      var actualAnswer;
+      var number1;
+      var number2;
+      var correctAnswers;
+      var incorrectAnswers;
+      var numberOfQuestions
+
+      function printQuestion() {
+        number1 = Math.floor(Math.random() * 10);
+        number2 = Math.floor(Math.random() * 10);
+        actualAnswer = number1 + number2;
+        document.getElementById("theQuestion").innerhtml = "What is" + number1 + "+" + number2 + "?";
+
+        }
+      function checkAnswer() {
+        var answer = document.getElementById("txtAnswer").value;
+        if (answer == actualAnswer) {
+        document.getElementById("finalResult").innerHTML = "Awesome job!";
+
+      } else {
+          document.getElementById(finalResult).innerHTML = "If you don't suceed, try try again!";
+        }
+      printQuestion();
+   }
+
+   function runGame()  {
+     for (var i = 1; i < 6; i++) }
+         document.getElementById("message").innerHTML += "<h" + i + ">Learn math the fun way!</h" + i + "><
+       }
+       printQuestion();
+   }
+   runGame();
+  </script>
+  </head>
+  <body onload= "runGame();">
+   <h3>Welcome to... Math! Yay!</h3>
+
+   <table>
+     <tr>
+       <td colspan="2">
+         <div id="message"></div>
+       </td>
+     </tr>
+     <tr>
+       <td colspan="2">
+         <hr size="1">
+       </td>
+     </tr>
+     <tr>
+       <td>Your answer</td>
+      <td><input type="text" id="txtAnswer"></td>
+     </tr>
+     <tr>
+       <td colspan="2"><button id="btnSubit" onClick="checkAnswer();">Submit</button></td>
+     </tr>
+   </table>
+
+   <a href="homepage.html">Go to Homepage</a>
+     <br />
+   <a href="secondpage.html">Go to Second Page</a>
+      <br />
+   <a href="thirdpage.html">Go to Third Page</a>
+
+  <div id="finalResult"></div>
+
+ </body>
+ </html>
