@@ -1,2 +1,0 @@
-# MART120
-Assignments
